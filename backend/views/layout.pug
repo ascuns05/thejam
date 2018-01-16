@@ -3,5 +3,20 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
-  body
+    link(rel="stylesheet", href="/stylesheets/materialize.css")
+  body.grey.lighten-3
+    nav.yellow
+      .naw-wrapper.container
+        a.brand-logo.grey-text.text-darken-3 
+          img(src="/images/logo.svg", alt="")
+        ul(id="nav-mobile", class="right hide-on-med-and-down")
+          li
+            a(href='/').grey-text.text-darken-3 index
+          li
+            a(href='/blog').grey-text.text-darken-3 blog
+          li
+            a(href='/login').grey-text.text-darken-3 login
+
     block content
+    script(src="/javascripts/materialize/bin/materialize.min.js")
+    script(src="/javascripts/config.mat.js")

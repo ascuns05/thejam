@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  .container
+    .row
+      h1.center-align Вход
+      if (err) 
+        h5.center-align.red-text.text-darken-2= err 
+      .col.l8.offset-l2.login
+        form(action="/admin", method="post")
+          .input-field
+            input(type="text", id="name", name="name")
+            label(for="name") Login
+          .input-field
+            input(type="password", id="pass", name="pass")
+            label(for="pass") Пароль
+          .input-field
+            button.btn-large.yellow.grey-text.text-darken-3.waves-effect(type="submit") Войти

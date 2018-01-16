@@ -1,0 +1,1 @@
+var initCollapsibleAdminViewPosts = M.Collapsible.init(document.querySelector('.collapsible-admin-view-posts'));

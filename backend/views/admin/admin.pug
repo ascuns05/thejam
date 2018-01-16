@@ -1,0 +1,13 @@
+extends ../layout
+
+block content
+	.container
+		.row
+			h2.center-align Админка
+			.card-panel.col.l4.yellow 
+				h5.text-darken-2.center-align Посты
+				p.desc Создание, просмотр, удаление и редактирование постов
+				.ctr
+					a(href="/admin/createpost").btn-flat.white.waves-effect.left Создать
+					a(href="/admin/viewposts").btn-flat.white.waves-effect.right Просмотр
+			

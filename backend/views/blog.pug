@@ -1,5 +1,11 @@
 extends layout
 
 block content
-	h1 Это блог
-	p Просто тест блога
+	.container
+		.row
+			each post in posts
+				.card-panel.z-depth-2
+					h3.center-align #{post.title}
+					p #{post.text}
+					div.right-align
+						a.btn-flat.waves-effect.waves-yellow.yellow.lighten-4 Подробнее

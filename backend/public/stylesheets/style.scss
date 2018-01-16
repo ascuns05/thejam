@@ -1,0 +1,52 @@
+$primary-color: #fdd835;
+
+body {
+  margin: 0;
+  font-family: "Roboto Light", sans-serif;
+  b {
+    font-family: "Roboto Bold", sans-serif;
+  }
+}
+
+.btn, .btn-flat, .btn-large {
+  font-family: "Roboto Bold", sans-serif!important;
+  text-transform: capitalize!important; 
+}
+
+.brand-logo img {
+  height: 40px;
+  margin-top: 12px;
+}
+
+.login {
+  .input-field {
+    button {
+      width: 100%;
+    }
+  }
+}
+
+
+.card-panel {
+  padding: 10px!important;
+  transition: .5s;
+  &:hover {
+    box-shadow: 0 8px 17px 2px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);
+  }
+}
+
+
+
+.input-field label {
+    color: darken($primary-color, 30%) !important; 
+}
+
+/* label underline focus color */
+.input-field {
+  input, textarea {
+    &:focus{
+      border-bottom: 1px solid $primary-color !important;
+      box-shadow: 0 1px 0 0 $primary-color !important; 
+    }
+  }
+}
